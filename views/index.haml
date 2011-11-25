@@ -1,0 +1,36 @@
+!!! 5
+%html{:lang => 'pt'}
+  %head
+    %meta{:charset => 'utf-8'}
+    %meta{:name => "robots", :content => "index, follow"}
+    %meta{:name => "author", :content => "Engage"}
+    %title Multidão · Produção Cultural Colaborativa · em fase de mudanças...
+    %link{ :href=>"/screen.css", :media=>"screen, projection", :rel=>"stylesheet", :type=>"text/css" }
+    /[if lt IE 9]
+      %script{ :src=>"http://html5shiv.googlecode.com/svn/trunk/html5.js", :type=>"text/javascript" }
+    %link{ :rel => 'shortcut icon', :href => "/images/favicon.ico" }
+  %body#multidao
+    #content
+      .wrapper
+        #shares= erb :shares
+        #box
+          %img{ :src=>'/images/logo_multidao.png'}
+          %p A Multidão está se transformando.
+          %p Após a criação do Grupo Comum, resultado da junção das plataformas Catarse e Multidão, estamos cada vez mais empolgados com a ideia de oferecer mais diversidade e possibilidades inovadoras no universo do financiamento colaborativo.
+          %p E por entendermos que o Catarse já realiza o papel de uma plataforma de crowdfunding voltada para o financiamento de projetos criativos diversos, não faz sentido atuar desta mesma forma com a Multidão.
+          %p Por isso estamos nos transformando, e ressurgiremos em breve com uma nova proposta, com novas ideias!
+          %p O objetivo final é que VOCÊ possa ter uma multitude de experiências com esta nova maneira de mobilizar pessoas, e desta forma fazer parte de iniciativas fantásticas.
+          %p
+            %a{ :href=> "http://catarse.me", :target=>"_blank" } Vamos conosco?
+        #catarse
+          .logo
+            %a{ :href=> "http://catarse.me", :target=>"_blank" }
+              %img{ :src=>'/images/logo_catarse.png' }
+          .click
+            %img{ :src=>'/images/clique.png' }
+        #embeds= erb :embeds
+        #comum
+          %a{ :href=> "http://comum.cc", :target=>"_blank" }
+            %img{ :src=>'/images/comum.png' }
+          A Multidão e o Catarse são integrantes do
+          %a{ :href=> "http://comum.cc", :target=>"_blank" } Grupo Comum
